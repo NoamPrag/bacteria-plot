@@ -15,3 +15,6 @@ chmod +x ./run.sh
     * Delimiter may be configured in configuration file
 - Config file is of a JSON format, like the example in the repo (`config.json`)
 - Output file is where to save the exported mp4 video
+
+## Requirements
+- [Docker](https://docs.docker.com/get-started/get-docker/)
