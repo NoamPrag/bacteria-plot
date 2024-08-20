@@ -1,0 +1,22 @@
+# pyenv virtual environment
+.python-version
+
+# python caches
+**/*.pyc
+**/*__pycahce__/
+
+
+# Manim's output directory
+media/
+
+.DS_STORE
+.cache/
+.local/
+
+
+.python_history
+.bash_history
+
+output.mp4
+
+data.csv

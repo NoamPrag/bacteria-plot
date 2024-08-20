@@ -1,0 +1,26 @@
+{
+  "axes": {
+    "x": {
+      "label": "Time (Hours)",
+      "interval": 6
+    },
+    "y": {
+      "label": null,
+      "range_min": 0,
+      "range_max": 1,
+      "interval": 0.2
+    }
+  },
+  "data_sets": {
+    "K381R": "BLUE",
+    "WT": "GREEN",
+    "C725A": "RED"
+  },
+  "labels": {
+    "font_size": 32,
+    "gap": 1
+  },
+  "video": {
+    "duration_seconds": 12
+  }
+}
