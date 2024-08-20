@@ -45,7 +45,7 @@ def main():
     config = read_configuration(config_file_path)
 
     with open(data_file_path, mode="r", newline="") as data_file:
-        csv_reader = csv.DictReader(data_file, delimiter="\t")
+        csv_reader = csv.DictReader(data_file, delimiter=config.data.delimiter)
 
         data_points = [
             {key: float(value) for key, value in row.items()} for row in csv_reader

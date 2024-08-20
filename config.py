@@ -22,7 +22,11 @@ class LabelsConfig(BaseModel):
 class VideoConfig(BaseModel):
     duration_seconds: int
 
+class DataConfig(BaseModel):
+    delimiter: str
+
 class Config(BaseModel):
+    data: DataConfig
     axes: AxesConfig
     data_sets: Dict[str, str]
     labels: LabelsConfig
