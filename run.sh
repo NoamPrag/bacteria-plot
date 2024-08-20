@@ -44,6 +44,11 @@ docker run --rm -it \
   --mount type=bind,source="$input_file",target="/manim/data.csv" \
   bacteria-plot
 
+if [ $? -ne 0 ]; then
+  echo "Error: Couldn't generate video"
+  exit 1
+fi
+
 mkdir -p "$(dirname $output_file)"
 cp -p ./media/videos/1080p60/DataPointsScene.mp4 "$output_file"
 rm -rf ./media
