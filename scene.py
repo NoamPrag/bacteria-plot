@@ -54,8 +54,8 @@ class DataPointsScene(Scene):
             "PINK": PINK,
             "TEAL": TEAL,
         }
-        return {label: names_to_colors[color_name] for label, color_name in self.config.data_sets.items()}
-        # return {label: color for label, color in zip(self._y_values_labels, _GRAPH_COLORS)}
+        get_color = lambda color_name: names_to_colors[color_name] if color_name in names_to_colors else ManimColor(color_name)
+        return {label: get_color(color_name) for label, color_name in self.config.data_sets.items()}
 
     def _plot_row(
         self,
