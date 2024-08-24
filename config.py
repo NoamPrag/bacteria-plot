@@ -20,7 +20,7 @@ class LabelsConfig(BaseModel):
     gap: float
 
 class VideoConfig(BaseModel):
-    duration_seconds: int
+    duration_seconds: float
 
 class DataConfig(BaseModel):
     delimiter: str
